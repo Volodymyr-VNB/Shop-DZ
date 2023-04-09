@@ -4,8 +4,10 @@
 body{
     font-family: 'Roboto', sans-serif;
     background-image: url("images/patt.png");
+  
 }
 .container{
+    
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
@@ -38,9 +40,14 @@ body{
 }
 .header{
 display: flex;
+position: sticky;
+ 
+
+top: 0px;
 height: 100px;
 align-items: center;
-background-color: rgba(255, 255, 255, 0.75);
+/* background-color: rgba(255, 255, 255, 0.75); */
+background-color: #cadbed;
 }
 .menu{
     display: flex;
@@ -278,7 +285,7 @@ input::placeholder{
 .text-transA{text-transform: capitalize;}   
 .product{
     display: flex;
-    position: relative;
+    position: inherit;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -286,11 +293,18 @@ input::placeholder{
     width: 100%;
     margin-top: 30px;
     
+    
+}
+.position-img{
+    display: flexbox;
+}
+.position-img2{
+    display: flexbox;
 }
 .sort-menu{
     background-color: #2b71b7;
     border: 1px solid white;
-    position: relative;
+    position: inherit;
     display: inline-block;
     width: calc(100% / 3);
     max-width: 100%; 
@@ -321,7 +335,7 @@ input::placeholder{
     width: 100%; 
     margin: 15px 0px 15px 0px; 
     display: flex;
-    position: relative;
+    /* position: relative; */
     flex-direction: column;
     justify-items: center;
     height: 650px;
@@ -342,33 +356,47 @@ input::placeholder{
     height: 105px;
     
 }
+.img-src-2{
+    
+    display: flex;
+    
+    justify-content: center;
+    width: 270px;
+    
+    align-content: center;
+    margin-top: -40px;
+}
 .fon-img{
     display: flex;
-    justify-content: center;
-    align-items:center ;
-    flex-direction: column;
+    justify-content: right;
+    /* align-items:center ;
+    flex-direction: column; */
     width: 100%;
     height: 180px;
     background-color: #cdddee;
+
+    align-items: flex-end;
+    flex-direction: column;
 }
 .img-size{
     display: flex;
     justify-content: center;
     align-items: center;
-  position: absolute;
+ 
    
     
     width: 30px;
     height: 30px;
     border: 1px solid #538cc5;
-    align-self: end;
-    margin-right: 10px;
-    margin-top: -50%;
+    
+    margin: 10px;
+    
 
     
 }
+
 .heart{
-    margin-top: -55px;
+    margin-top: -5px;
 }
 .img-size-item{
     width: 20px;
