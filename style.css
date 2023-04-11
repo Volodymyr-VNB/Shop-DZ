@@ -303,22 +303,56 @@ input::placeholder{
     display: flexbox;
 }
 .sort-menu{
-    background-color: #2b71b7;
-    border: 1px solid white;
-    position: inherit;
-    display: inline-block;
+    display: flex;
+    position: relative;
+    
+  
     width: calc(100% / 3);
     max-width: 100%; 
     margin-top: 20px;
-    max-height: 40px;
+    max-height: 42px;
     color: white;
-    border-radius: 0px;
+   
+    background-color: #2b71b7;
+    border: 1px solid white;
     font-size: 21px;
     font-weight: lighter;
-    font-family: 'Roboto', sans-serif;
+    
     
 }
-.sort-menu option{
+.sort-menu a{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    
+    align-items: center;
+    line-height: 40px;
+    color: white;
+    text-decoration: none;
+    background-color: #2b71b7;
+    border: 1px solid white;
+    font-size: 21px;
+    font-weight: lighter;
+}
+.sort-menu  li{
+    background-color: #2b71b7;
+    border: 1px solid white;
+    width: 100%;
+    list-style-type: none;
+}
+.sort-menu-down  li{
+    background-color: #2b71b7;
+    border: 1px solid white;
+    width: 100%;
+}
+.sort-menu li:hover .sort-menu-down{
+    display: block;
+}
+.sort-menu-down a:hover {
+    background-color: white;
+    color: #2b71b7;
+}
+/* .sort-menu option{
     font-size: 21px;
     font-weight: lighter;
     line-height: 40px;
@@ -330,6 +364,17 @@ input::placeholder{
 .sort-menu option:hover :focus {
     color: #2b71b7;
     background-color: white;
+} */
+
+.sort-menu-down {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 100% ;
+    max-width: 100%; 
+    height: 40px;
+    top: 100%;
+    
 }
 .product-1{
     max-width: calc(( 100% - 60px ) / 3 );
