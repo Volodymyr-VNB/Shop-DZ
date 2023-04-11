@@ -383,17 +383,11 @@ input::placeholder{
     display: flex;
     justify-content: center;
     align-items: center;
- 
-   
-    
-    width: 30px;
+     width: 30px;
     height: 30px;
     border: 1px solid #538cc5;
-    
-    margin: 10px;
-    
-
-    
+     margin: 10px;
+  
 }
 
 .heart{
