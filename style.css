@@ -35,6 +35,14 @@ body {
   max-width: 75%;
   flex: 0 0 75%;
 }
+.col-8 {
+  max-width: calc(100% * 8 / 12);
+  flex: 0 0 calc(100% * 8 / 12);
+}
+.col-4 {
+  max-width: calc(100% * 4 / 12);
+  flex: 0 0 calc(100% * 4 / 12);
+}
 .header {
   display: flex;
   position: sticky;
@@ -190,12 +198,12 @@ input::placeholder {
 .backgro-slide {
   border-bottom: 1px solid #fefeff;
   background-color: rgba(36, 92, 149, 0.2);
-  margin: 0 -15px;
-  display: flex;
+  
 }
 
 .main {
   display: flex;
+  flex-grow: 1; /* для footer */
 
   background-image: url(/images/patt.png);
   flex-wrap: wrap;
@@ -222,6 +230,7 @@ input::placeholder {
 
   width: 100%;
   margin: 0 auto;
+   flex-shrink: 0; /*  до низу */
 }
 .asid {
   height: 850px;
@@ -267,7 +276,7 @@ input::placeholder {
   text-transform: capitalize;
 }
 .product {
-  display: flex;
+  
   position: inherit;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -286,8 +295,8 @@ input::placeholder {
   display: flex;
   position: relative;
 
-  width: calc(100% / 3);
-  max-width: 100%;
+  /* width: calc(100% / 3); */
+  /* max-width: 100%; */
   margin-top: 20px;
   max-height: 42px;
   color: white;
@@ -340,8 +349,8 @@ input::placeholder {
   top: 100%;
 }
 .product-1 {
-  max-width: calc((100% - 60px) / 3);
-  width: 100%;
+  /* max-width: calc((100% - 60px) / 3);
+  width: 100%; */
   margin: 15px 0px 15px 0px;
   display: flex;
 
