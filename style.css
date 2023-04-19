@@ -399,15 +399,47 @@ input::placeholder {
   height: 30px;
   border: 1px solid #538cc5;
   margin: 10px;
+  /* background-color: #2c71b8; */
+}
+.img-size1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #538cc5;
+  margin:  -5px 10px 10px 10px;
+  /* margin-top: -5px; */
+ 
 }
 
 .heart {
   margin-top: -5px;
 }
-.img-size-item {
+.zoom{
   width: 20px;
   height: 20px;
+  background:url(./images/square-is-blue.png) center no-repeat ;
 }
+.lake{
+  width: 20px;
+  height: 20px;
+  z-index: 2;
+  background:url(./images/heart-blue.png) center no-repeat ;
+}
+.lake:hover{
+  background:url(./images/heart-write.png) center no-repeat ;  
+}
+.zoom:hover{
+  background:url(./images/square-is-white.png) center no-repeat ;
+  
+}
+.img-size:hover{
+  background-color: #2c71b8;
+} */
+
+
+
 .h2-style {
   text-align: center;
   margin-top: 10px;
