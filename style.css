@@ -330,10 +330,11 @@ input::placeholder {
   border: 1px solid white;
   width: 100%;
   list-style-type: none;
-  z-index: 20;
+ 
 }
 .sort-menu li:hover .sort-menu-down {
   display: block;
+  z-index: 5;
 }
 .sort-menu-down a:hover {
   background-color: white;
@@ -425,7 +426,7 @@ input::placeholder {
 .lake{
   width: 20px;
   height: 20px;
-  /* z-index: 2; */
+  z-index: 1; 
   background:url(./images/heart-blue.png) center no-repeat ;
 }
 .lake:hover{
