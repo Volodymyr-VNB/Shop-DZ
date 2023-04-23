@@ -330,6 +330,7 @@ input::placeholder {
   border: 1px solid white;
   width: 100%;
   list-style-type: none;
+  z-index: 20;
 }
 .sort-menu li:hover .sort-menu-down {
   display: block;
@@ -424,7 +425,7 @@ input::placeholder {
 .lake{
   width: 20px;
   height: 20px;
-  z-index: 2;
+  /* z-index: 2; */
   background:url(./images/heart-blue.png) center no-repeat ;
 }
 .lake:hover{
@@ -454,7 +455,8 @@ input::placeholder {
 }  */
 /* через sup */
 .marg-dollar {
-  margin: 20 px 0px;
+  margin: 20px 0px;
+  text-align: center;
 }
 .button-size {
   height: 50px;
@@ -464,7 +466,24 @@ input::placeholder {
   border: 1px solid white;
   background-color: #2c71b8;
   color: white;
+  display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
 }
+.button-size:hover{
+  background-color: white;
+  color: #2c71b8;
+}
+.button-size2:hover{
+  background-color: white;
+  color: #568dc6;
+  
+}
+.button-size2:hover .img-size-item{
+  background: url(./images/cart-shop-blue.png) no-repeat;
+}
+
 .button-size2 {
   background-color: #568dc6;
   border: 1px solid #568dc6;
@@ -477,6 +496,11 @@ input::placeholder {
   margin: 15px auto;
 
   text-align: center;
+}
+.img-size-item{
+  background: url(./images/cart-shop-whrite.png) no-repeat;
+  width: 20px;
+  height: 20px;
 }
 
 .square {
