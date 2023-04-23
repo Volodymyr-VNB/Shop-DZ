@@ -537,3 +537,6 @@ input::placeholder {
   display: flex;
   align-items: center;
 }
+.ul-li-product{
+  display: contents;
+}
