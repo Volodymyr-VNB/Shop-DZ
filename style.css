@@ -431,21 +431,28 @@ input::placeholder {
   background:url(./images/square-is-blue.png) center no-repeat ;
 }
 .lake{
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   z-index: 1; 
   background:url(./images/heart-blue.png) center no-repeat ;
 }
-.lake:hover{
+.lake:hover,
+.laked
+{
+  background-color: #2c71b8;
   background:url(./images/heart-write.png) center no-repeat ;  
 }
-.zoom:hover{
+.zoom:hover
+{
+  background-color: #2c71b8;
   background:url(./images/square-is-white.png) center no-repeat ;
   /* background-image: ; */
 }
-.img-size:hover{
+.img-size:hover,
+.laked
+{
   background-color: #2c71b8;
-} */
+} 
 
 
 
@@ -546,4 +553,80 @@ input::placeholder {
 }
 .ul-li-product{
   display: contents;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* display: none; */
+}
+
+.modal-block {
+  width: 300px;
+  height: 200px;
+  background-color: white;
+  padding: 15px;
+  margin: 100px auto;
+}
+
+.form-field {
+  margin: 15px 0;
+}
+.form-field input {
+  width: 100%;
+  padding: 5px;
+}
+.btn-close {
+  text-align: right;
+  cursor: pointer;
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+/* =============== */
+
+
+
+.slider > div {
+  font-size: 100px;
+  
+  color: white;
+  text-align: center;
+  padding: 150px 150px;
+  /* background-image: url(./images/arrow_right_icon.svg _icon.svg); */
+}
+.dots-style {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+}
+
+.dots-style button {
+  background: #2c71b8;
+  border: 2px white solid;
+  
+  font-size: 0;
+  height: 20px;
+  width: 20px;
+  margin: 10px;
+  
+}
+.dots-style li[class="slick-active"] button {
+  background: white;
+}
+.slider .slick-arrow{
+  margin: 0 100px; 
+  z-index: 2; 
+  width: 60px; 
+  height: 60px; 
 }
